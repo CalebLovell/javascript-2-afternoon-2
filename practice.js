@@ -50,12 +50,12 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 */
 
 function looper(family) {
-  for (i = 0; i < family.length-1; i++) {
-    return alert(family[i]);
+  for (i = 0; i < family.length; i++) {
+    alert(family[i]);
   }
 }
 
-looper(family);
+// looper(family);
 
 ////////// PROBLEM 4 //////////
 
@@ -68,8 +68,13 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
   Loop through the given array backwards alerting every item in the array starting at the end.\
 */
 
-//Code Here
+function reversedLooper(letters) {
+  for (i = letters.length-1; i >= 0; i--) {
+    alert(letters[i]);
+  }
+}
 
+// reversedLooper(letters);
 
 
 ////////// PROBLEM 5 //////////
@@ -83,7 +88,18 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
   Return an array that contains the even numbers from the nums array.
 */
 
-//Code Here
+const evenNums = [];
+
+function evenFinder(nums1) {
+  for (i = 0; i < nums1.length; i++) {
+    if (nums1[i]%2 === 0) {
+      evenNums.push(nums1[i]);
+    }
+  }
+  return evenNums;
+}
+
+// evenFinder(nums);
 
 
 
